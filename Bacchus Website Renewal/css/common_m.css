@@ -1,0 +1,224 @@
+@import url(core.css);
+@font-face{
+	font-family:Typo_SsangmunDongB;
+	src:url("../fonts/Typo_SsangmunDongB.eot");
+	src:local(※),
+			url("../fonts/Typo_SsangmunDongB.woff") format("woff");
+	}
+
+@font-face{
+	font-family:SCDream4;
+	src:url("../fonts/SCDream4.eot");
+	src:local(※),
+			url("../fonts/SCDream4.woff") format("woff");
+	}
+
+
+#wrapper{
+		overflow-x: hidden;
+		width: 100%; height: auto;
+		margin:0; 
+		padding:0;
+}
+
+
+/*=======탑박스=======*/
+
+#topbox{	
+	margin:0; 
+	z-index: 99;
+	position: relative;
+	width: 100%;
+	height: 70px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 15px #0000001A;
+}
+
+
+#menuBox{
+	width: 100%;
+	height: 70px;
+}
+
+
+#trigger{
+	position: absolute;
+	right: 5px;
+	top:27%;
+	display: block;
+		width: 10%;
+	height: 40%;
+}
+
+
+#m_logo{
+	position: absolute;
+	left: 2%;
+	top:20%;
+	width: 100%;
+	height: 100%;
+	background: url(../img/sorce/nav/logo.jpg)no-repeat;
+}
+
+
+#trigger>img{
+	width: 100%;
+	height: 100%;
+	display: block;
+
+}
+
+
+#trigger02{
+	position: absolute;
+	right: 5px;
+	top:27%;
+	display: none;
+	width: 9%;
+	height: 40%;
+}
+
+
+#trigger02>img{
+	width: 100%;
+	height: 100%;
+
+}
+
+
+
+
+/*햄버거 버튼 클릭했을 때*/
+#mobileBx{
+	margin-top: -2%;
+	width: 100%;
+	height: 450px;	
+	background: #F1F6F9 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 15px #0000001A;
+}
+
+
+
+#mobileList li{
+	width: 100%;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font: normal normal 4.54vw/47px Noto Sans CJK KR;
+	letter-spacing: 0px;
+	color: #000B8C;
+	margin: 2% 0; 
+}
+
+
+
+#mobileImgList{
+	display: flex;
+	width: 70%;
+	height: 65px;
+	margin: 40% 18%;
+
+}
+
+#mobileImgList>li{
+	width: 100%; height: 100%;	
+	}
+
+#mobileImgList .mImgList01{
+background: url(../img/sorce/nav-m/insta-m.png)no-repeat;
+}
+#mobileImgList .mImgList02{
+	background: url(../img/sorce/nav-m/you-m.png)no-repeat;
+}
+#mobileImgList .mImgList03{
+	background: url(../img/sorce/nav-m/face-m.png)no-repeat;
+}
+#mobileImgList .mImgList04{
+	background: url(../img/sorce/nav-m/naver-m.png)no-repeat;
+}
+
+
+
+
+
+
+.none:after {content: ""; display: block; clear: both; }
+
+
+
+.contsWrapper{
+	height: auto;
+}
+
+
+
+
+/*==========푸터===========*/
+
+.footer{
+	width: 100%; height: 250px;
+	background:#090E4D 0% 0% no-repeat padding-box;
+}
+
+
+
+.footer>.footerBox{
+	position: relative;
+	width: 80%; margin: 0 auto;
+	height: inherit;
+}
+
+.footer .dongaLogo{
+	padding-top: 4%;
+	width: 35%; height: 20%;
+}
+.footerBox>.dongaLogo img{
+	width: 100%;
+	height: 100%;
+}
+
+/*공지사항, 이용약관, 개인정보취급방침*/
+.footer>.footerBox>.footerText{
+	width: 100%;
+	margin-top: 5%;
+	margin-left: -3%;
+}
+
+.footerText::after{
+	display: block;
+	content: '';
+	clear: both;
+}
+
+
+.footer>.footerBox>.footerText>li{
+	float: left;
+	font:1rem SCDream4;
+	color:#FFF;
+	margin:0 3%;
+}
+
+/*공통사항*/
+.footer>.footerBox>select,address,p{
+	font:0.8rem SCDream4;
+	color:#FFF;
+}
+
+.footer>.footerBox>p{
+	margin-top: 3%;
+	opacity: 0.7;
+}
+
+.footer>.footerBox>address{
+	margin-top: 5%;
+	opacity: 0.7;
+
+}
+
+
+.footer>.footerBox>select{
+	margin-top: 5%;
+	color:#A4A4A4;
+	padding:3%;
+}
