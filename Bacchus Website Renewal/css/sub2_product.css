@@ -1,0 +1,327 @@
+@import url(common.css);
+@font-face{
+	font-family:Typo_SsangmunDongB;
+	src:url("../fonts/Typo_SsangmunDongB.eot");
+	src:local(※),
+			url("../fonts/Typo_SsangmunDongB.woff") format("woff");
+	}
+
+@font-face{
+	font-family:SCDream4;
+	src:url("../fonts/SCDream4.eot");
+	src:local(※),
+			url("../fonts/SCDream4.woff") format("woff");
+	}
+
+
+
+/*=====박카스를 소개합니다 cont1=======*/
+
+
+/*전체 콘텐츠 박스*/
+.pud{
+	background-color: #060A39; /*짙은파란색*/
+
+}
+
+/*박카스 소개 콘텐츠 부분*/
+.cont1{
+	background: #000b8c 0% 0% no-repeat padding-box;	
+	background: #000B8C url(../img/sorce/sub2/sub_bg02.png) no-repeat bottom;
+	opacity: 1;
+	height: 960px;
+	
+}
+
+
+
+/*박카스를 소개합니다, 탭메뉴*/
+.contBox1{
+	width:960px; height: auto;
+	margin:0 auto; 
+	position: relative;
+
+}
+
+
+/*메인카피*/
+.contBox1>p{
+	padding-top: 80px;
+	text-align: center;
+	font:4.2rem Typo_SsangmunDongB;
+	
+}
+
+
+
+/*탭메뉴*/
+.contBox1>select{
+	position: absolute;
+	right:150px; top:130px;
+	padding : 5px 5px;
+	color:white;
+	font:1rem SCDream4;
+	border-radius: 25px;
+	text-align: center;
+	background-color: #090E4D;
+}
+
+
+
+.contBox1>#contBox1_img1{
+	position: absolute;
+	left: 138px; top:290px;
+	background: url("../img/sorce/sub2/sub2_img1.png") no-repeat;
+	width: 700px; height: 556px;
+}
+
+
+/*=========이런분들에게 추천해요======== cont2*/
+
+
+/*전체 콘텐츠2 박스*/
+
+
+/*콘텐츠2영역 박스*/
+.contBox2{
+	position: relative;
+	width: 960px;
+	margin:0 auto;
+	height: 500px;
+
+}
+
+
+
+/*번개 아이콘 박스*/
+.thunBox{
+	width: 700px; height: 30px;
+	margin-left: 150px;
+	margin-top: -100px;
+}
+
+
+/*번개 아이콘*/
+.thun{
+	margin-top: 35px;
+	display: inline-block;
+}
+
+.Icon1{
+		padding-left: 50px;
+}
+
+.Icon2{
+	padding-left: 505px;
+}
+
+
+/*이런분들에게 추천해요*/
+.contBox2>p{
+	margin-left: 270px;
+	font:2.2rem Typo_SsangmunDongB;
+}
+
+
+/*투명박스 개별리스트*/
+.contBox2>ul>li{
+	padding:55px 8px;
+	display: inline-block;
+
+
+}
+
+
+/*투명박스 개별*/
+.contBox2>.whiteBx div{
+	outline: 1px solid red;
+	width: 300px; height: 334px;
+	background-color: #fff;
+	opacity: 20%;
+	border-radius: 20px;
+
+}
+
+
+
+/*아이콘 전체*/
+.contBox2>ol{
+	position: absolute;
+	top:150px;
+	z-index: 99;
+	width: 100%;
+}
+
+
+/*첫번째 아이콘만*/
+.contBox2>ol>li:first-child{
+	margin-left: 25px;
+}
+
+
+/* 두번째 아이콘 */
+.contBox2>ol>li:nth-child(2){
+	margin-left: 80px;
+}
+
+
+
+
+/*아이콘 개별*/
+.contBox2>ol>li{
+	float: left;
+	padding:10px 60px;
+	margin-left:65px;
+}
+
+/*설명글 박스*/
+.contBox2>dl{
+	position: absolute;
+	top:350px;
+}
+
+
+
+/*아이콘 설명글 개별*/
+.contBox2>dl>dt,dd{
+	display: inline-block;
+	width: 165px; height: 63px;
+	font:1.3rem SCDream4;
+	color: white;
+	text-align: center;
+	padding:5px 75px;
+}
+
+
+/*==========수평선=========*/
+
+.divide{
+
+border: dashed 2px #FFFFFF;
+opacity: 0.16
+
+}
+
+
+
+
+
+/*========박카스 상세내역========cont3*/
+
+
+.contBox3{
+	position: relative;
+	width: 960px;
+	margin:0 auto;
+	height: 560px;
+	
+}
+
+
+.contBox3>#productDescip{
+	margin-left: 20px;
+	padding-top: 60px;
+	font:2.2rem Typo_SsangmunDongB;
+
+}
+
+.paper{
+	margin-top: 25px;
+	width: 960px;
+	height: 320px;
+	background: url(../img/sorce/sub2/paper.png)no-repeat;
+}
+
+
+/*제품분류 텍스트*/
+
+.paperTextBox{
+	width: 783px;
+	height: 245px;
+	margin-left: 20px;
+	padding-top: 30px;
+	margin: 0 auto;
+
+
+}
+
+
+.papertitle{
+	margin-top: 30px;
+	width: 106px;
+	margin-left: 15px;
+
+}
+
+
+.paperTextBox>.papertitle>p{
+	text-align: left;
+	letter-spacing: 0px;
+
+}
+
+
+
+
+
+.paperTextBox>.papertitle>p:first-child{
+	width: 130px;
+	font: normal normal normal 2rem/48px Typo_SsangmunDongB;
+	color: #000B8C;
+	margin-top: -30px;
+
+}
+
+
+
+.paperTextBox>.papertitle>p{
+	font:normal normal 200 1.2rem/40px SCDream4;
+	color: #EB1728;
+		margin:10px 0;
+}
+
+
+
+.paperDescrip{
+	width: 642px;
+	margin-left: 160px;
+	margin-top: -210px;
+
+
+}
+
+.paperDescrip>p:first-child{
+	margin-top: -245px;
+	font: normal normal 200 1rem/23px SCDream4;
+	letter-spacing: 0px;
+	color: #000B8C;
+
+
+}
+
+
+.paperDescrip02{
+	margin-top:17.5px;
+}
+
+
+
+.paperDescrip02>p,.paperDescrip03>p,.discripBox03>p{
+	text-align: left;
+	font: normal normal 200 1rem/40px SCDream4;
+	letter-spacing: 0px;
+	color: #3D3D3D;
+}
+
+
+.paperDescrip02>p{
+	padding:4px 0;
+}
+
+.discripBox03>p{
+	margin-top: 7px;
+	padding:2px 0;
+}
+
+
+

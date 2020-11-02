@@ -1,0 +1,130 @@
+@import url(common.css);
+
+
+
+/* =========컨텐츠 시작========== */
+
+
+#hisWrap{
+    width: 100%;
+    height: auto;
+    background: #141414 0% 0% no-repeat padding-box;
+}
+
+
+#hisContWrap{
+    width: 60%;
+    margin:0 auto;
+    padding: 3% 1%;
+
+}
+
+
+
+/* ====히스토리 sec Box01==== */
+
+
+/* 카피 공통사항 */
+.hisCommonCopy{
+    text-align: center;
+}
+
+/* DAELIM MUSEUM 카피 & HISTORY 카피*/
+.hisMainCopy>p:first-child, #hisContBox04>h4{
+    font:normal normal 3rem/45px 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    color:#ffffff;
+    padding-top: 8%;
+}
+
+#hisContBox04>#hiscont4subCopy,.hisMainCopy>p:last-child{
+    font:normal normal 0.7rem/55px 'Noto Sans KR', sans-serif;
+    color:#02E8DC;
+}
+
+
+
+
+
+.hisDescrip>p{
+    width: 52%;
+    margin: 0 auto;
+    padding-top: 2.5%;
+    margin-bottom: 3%;
+    color:#8B8B8B;
+    font:normal normal 1.3rem/40px 'Noto Sans KR', sans-serif;
+    
+}
+
+/* ======히스토리 이미지 박스 Box02====== */
+
+
+
+
+
+.hisImgBox01{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 68%;
+    background: url(../img/sub3/sub3_img.png) no-repeat;
+
+}
+
+
+.hisImgDescrip>p:first-child{
+    padding-top: 3%;
+    font:normal normal 1rem/20px 'Noto Sans KR', sans-serif;
+    color:#ffffff;
+}
+
+
+.hisImgDescrip>p:last-child{
+    width: 66%;
+    margin: 0 auto;
+    padding-top: 3%;
+    font:normal normal 1.1rem/33px 'Noto Sans KR', sans-serif;
+    color:#8B8B8B;
+}
+
+
+/* =====history 연혁 Box04======= */
+
+
+
+#hisBox{
+    padding-bottom: 15%;
+
+}
+
+
+
+#hisBox span{
+    text-align: left;
+    font:normal normal 1.3rem/35px 'Noto Sans KR', sans-serif;
+    color: #8B8B8B;
+    padding-right: 3%;
+}
+
+
+
+.hiscontsCommon01{
+    margin: 0 auto;
+    width: 66%;
+    padding:3%;
+
+}
+
+
+#hisBox>div:nth-child(odd){
+    background: #1D1D1D 0% 0% no-repeat padding-box;
+}
+
+
+
+
+
+#hisBox>div:nth-child(even){
+    background: #141414 0% 0% no-repeat padding-box;
+
+}
+

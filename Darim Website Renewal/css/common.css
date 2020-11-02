@@ -1,0 +1,1006 @@
+@import url("core.css");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR:wght@300&display=swap');
+/*
+font-family: 'Abril Fatface', cursive;
+*/
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+
+*{
+	box-sizing: border-box;
+} 
+
+#wrapper{
+	width: 100%; height: auto;
+}
+
+
+
+
+#topbox{
+	z-index: 99;
+	position: fixed;
+	width: 100%;	
+	height: 80px;
+	background: #111111 0% 0% no-repeat padding-box;
+}
+
+
+nav{
+	width: 60%;
+	height: 80px;
+	margin:0 auto;
+	background: #111111 0% 0% no-repeat padding-box;
+}
+
+
+nav #logo{
+	float: left;
+	position: relative;
+	width: 20%;	
+	margin-top: 2%;
+}
+
+nav #logo img{
+	width: 100%;
+	height: 100%;
+}
+
+
+/*네비게이션 메뉴*/
+#gnb{
+	position: absolute;
+	left: 20%; top:35%;
+	width: 50%;
+	padding:0 2%;
+	margin-left: 15%;
+}
+
+#gnb>li{
+	font-family: 'Noto Sans CJK KR';
+	font-size: 1.3rem;
+	line-height: 29px;
+		float: left;
+		width: 18%;
+}
+
+#gnb>li>a{
+	font-family: 'Noto Sans CJK KR';
+	text-align: center;
+	color:#FFF;
+	font: normal normal 1.2rem/29px 'Noto Sans KR', sans-serif;
+}
+
+
+/* 스크롤 서브메뉴 100% */
+#subLine{
+position: absolute;
+width: 100%;
+background: #111111 0% 0% no-repeat padding-box;
+}
+
+
+
+.subMenu{
+	z-index: 99;
+	position: absolute;
+	top:190%;
+	margin-left: -2%;
+	width: 20%;
+	text-align: center;
+	opacity: 1;
+	display: none;
+}
+
+
+.subMenu>li{
+	width: 100%;
+	margin-bottom: 3%;
+	font-family: 'Noto Sans CJK KR';
+	font-size: 0.8rem;
+	line-height: 29px;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+}
+
+
+
+#contWrap{
+	height:auto;
+
+}
+
+
+/* ----------푸터---------- */
+#footer{
+	position: relative;
+	width: 100%;
+	background: #111111 0% 0% no-repeat padding-box;
+	opacity: 1;
+	font-family: Noto Sans CJK KR;
+	color: #FFFFFF;
+	padding-bottom: 1%;
+
+
+}
+
+#footerBox{
+	margin: 0 auto;
+	width: 60%;
+	padding-top: 1%;
+
+	
+}
+
+
+#loginBox{
+	margin-top: 2%;
+	margin-left: 38%;
+	width: 30%;
+	margin-bottom: 2%;
+
+}
+
+#loginBox>li{
+	width: 20%;
+	float: left;
+	margin: 0 2%;
+	text-align: center;
+	font: normal normal 0.7rem/19px 'Noto Sans KR', sans-serif;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+}
+
+
+#loginBox>li:not(:last-child)::after{
+	float: right;
+	padding-top: 5%;
+	content: '｜';
+	margin-left: 20px;
+}
+
+
+#footerTextBox{
+	width:50%;
+	font: normal normal 0.8rem/24px 'Noto Sans KR', sans-serif;
+	opacity: 0.5;
+	text-align: center;
+	margin-bottom: 2%;
+	margin-left: 27%;
+}
+
+
+#contactBox{
+	font: normal normal 0.8rem/24px 'Noto Sans KR', sans-serif;
+	width:100%;
+	margin-bottom: 2%;
+	padding-bottom: 5%;
+	margin-left: 10%;
+}
+
+#contactBox>li{
+	float: left;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ================미디어쿼리============ */
+
+@media screen and (max-width: 767px){
+
+
+/* PC 메뉴 없애기 */
+	#gnb,
+	#subLine,
+	#logo,
+	nav{
+		display: none;
+	}
+
+
+#wrapper{
+		width: 100%; height: auto;
+	}
+	
+
+#topbox{
+	position: relative;
+	position: fixed;
+	width: 100%;	
+	height: 60px;
+	background: #141414 0% 0% no-repeat padding-box;
+}
+
+
+
+#moSubline{
+	display: none;
+	position: relative;
+	width: 100%;
+	height: 55vh;
+	background: #141414 url(../img/mobile/m_hover.png) no-repeat bottom/100%;
+}
+
+
+
+#mobileMenu{
+	position: absolute;
+	top:12%;
+	left: 8%;
+	display: block;
+
+}
+
+#mobileMenu li{
+	text-align: left;
+	font: normal normal normal 4.5vw/30px Noto Sans KR;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	margin-top: 28%;
+}
+
+
+
+
+#trigger{
+	display: block;
+	width: 10%;
+	position: absolute;
+	top:15%;
+	right: 2%;
+}
+
+
+
+#trigger>img{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+#trigger02{
+	display: block;
+	z-index: 1!important;
+	top:2%;
+	position: absolute;
+	right: -1%;
+}
+
+
+
+#trigger02>img{
+	width: 80%;
+	height: 80%;
+}
+
+
+
+
+
+
+#m_logo{
+	z-index: 999!important;
+	position: absolute;
+	top:17%;
+	left: 8%;
+	display: block;
+	background: url(../img/mobile/m_logo.png)no-repeat 100%/100%;
+	width: 45%;
+	height: 70%;
+
+}
+
+
+
+
+#contWrap{
+	height:auto;
+}
+
+
+/* ----------푸터---------- */
+#footer{
+	padding-top: 5%;
+	width: 100%;
+	background: #111111 0% 0% no-repeat padding-box;
+	opacity: 1;
+	font-family: Noto Sans KR;
+	color: #FFFFFF;
+	padding-bottom: 5%;
+
+
+}
+
+#footerBox{
+	width: 90%;
+	padding-top: 1%;
+	margin: 0 auto;
+	
+}
+
+
+#loginBox{
+	margin-left: 4%;
+	margin-top: 2.5%;
+	width: 100%;
+	margin-bottom: 3%;
+
+}
+
+#loginBox>li{
+	width: 15%;
+	float: left;
+	margin: 0 1%;
+	text-align: left;
+	font: normal normal 2.9vw/19px 'Noto Sans KR';
+	letter-spacing: 0px;
+	color: #FFFFFF;
+}
+
+
+#loginBox>li:not(:last-child)::after{
+	float: right;
+	margin-top: -31%;
+	content: '｜';
+	margin-left: 8%;
+}
+
+
+#footerTextBox{
+	width:100%;
+	font: normal normal 3.5vw/23px 'Noto Sans KR', sans-serif;
+	opacity: 0.5;
+	text-align: left;
+	margin-bottom: 2%;
+	margin-left: 3%;
+}
+
+
+#contactBox{
+	margin-left: 1%;
+	width:100%;
+	margin-bottom: 2%;
+	padding-bottom: 1%;
+}
+
+#contactBox>li{
+	float: left;
+	margin-left: 3%;
+}
+
+
+#contactBox>li>a{
+	font: normal normal 3vw/20px 'Noto Sans KR', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+}/*모바일*/
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1020px){
+
+
+/* 모바일 메뉴 */
+
+
+#mobileMenu{
+	display: none;
+
+}
+
+#trigger{
+	display: none;
+}
+
+#trigger02{
+	display: none;
+}
+
+
+#m_logo{
+	display: none;
+}
+
+
+
+
+
+	#topbox{
+		z-index: 99;
+		position: fixed;
+		width: 100%;	
+		height: 50px;
+		background: #111111 0% 0% no-repeat padding-box;
+	}
+	
+	
+	nav{
+		width: 60%;
+		height: inherit;
+		margin:0 auto;
+		background: #111111 0% 0% no-repeat padding-box;
+	}
+	
+	
+	nav #logo{
+		float: left;
+		position: relative;
+		margin-top: 2.5%;
+		width: 20%;	
+	}
+	
+	nav #logo img{
+		width: 100%;
+	}
+
+
+
+	
+	
+	/*네비게이션 메뉴*/
+	#gnb{
+		position: absolute;
+		left: 20%; top:20%;
+		width: 50%;
+		padding:0 2%;
+		margin-left: 15%;
+	}
+	
+	#gnb>li{
+			float: left;
+			width: 18%;
+	}
+	
+	#gnb>li>a{
+		font-family: 'Noto Sans CJK KR';
+		text-align: center;
+		color:#FFF;
+		font: normal normal 0.8vw/29px 'Noto Sans KR', sans-serif;
+	}
+	
+	
+	/* 스크롤 서브메뉴 100% */
+	#subLine{
+	position: absolute;
+	width: 100%;
+	background: #111111 0% 0% no-repeat padding-box;
+	}
+	
+	
+	
+	.subMenu{
+		z-index: 99;
+		position: absolute;
+		top:10%;
+		margin-left: -2%;
+		width: 20%;
+		text-align: center;
+		opacity: 1;
+		display: none;
+	}
+	
+	
+	.subMenu>li{
+		width: 100%;
+		margin-bottom: 3%;
+		font-family: 'Noto Sans KR';
+		font-size: 0.8vw;
+		line-height: 29px;
+		letter-spacing: 0px;
+		color: #FFFFFF;
+	}
+	
+	
+	
+	#contWrap{
+		height:auto;
+	
+	}
+
+
+
+/* ----------푸터---------- */
+#footer{
+	width: 100%;
+	background: #111111 0% 0% no-repeat padding-box;
+	opacity: 1;
+	font-family: Noto Sans KR;
+	color: #FFFFFF;
+	padding-bottom: 1%;
+
+
+}
+
+#footerBox{
+	margin: 0 auto;
+	width: 60%;
+	padding-top: 1%;
+
+	
+}
+
+
+#loginBox{
+	width: 60%;
+	margin-top: 2%;
+	margin-left: 25%;
+	width: 60%;
+	margin-bottom: 2%;
+
+}
+
+#loginBox>li{
+	width: 23%;
+	float: left;
+	margin: 0 1%;
+	text-align: center;
+	font: normal normal 0.7vw/19px 'Noto Sans KR', sans-serif;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+}
+
+
+#loginBox>li:not(:last-child)::after{
+	float: right;
+	margin-top: -28%;
+	content: '｜';
+	margin-left: 20px;
+}
+
+
+#footerTextBox{
+	width:60%;
+	font: normal normal 0.8vw/20px 'Noto Sans KR', sans-serif;
+	opacity: 0.5;
+	text-align: center;
+	margin-bottom: 2%;
+	margin-left: 23%;
+}
+
+
+#contactBox{
+	margin-bottom: 2%;
+	padding-bottom: 33%;
+	width: 100%;
+}
+
+#contactBox>li{
+	float: left;
+	margin-left: 4%;
+	font: normal normal 0.5vw/15px 'Noto Sans KR', sans-serif;
+}
+
+#contactBox>li>a{
+	width: 100%;
+}
+
+
+
+
+}
+
+/* 태블릿1 아이패드*/
+
+
+
+
+@media screen and (min-width: 1021px) and (max-width: 1250px){
+
+
+/* 모바일 메뉴 */
+
+
+#mobileMenu{
+	display: none;
+
+}
+
+#trigger{
+	display: none;
+}
+
+#trigger02{
+	display: none;
+}
+
+
+#m_logo{
+	display: none;
+}
+
+
+
+
+	#topbox{
+		z-index: 99;
+		position: fixed;
+		width: 100%;	
+		height: 60px;
+		background: #111111 0% 0% no-repeat padding-box;
+	}
+	
+	
+	nav{
+		width: 60%;
+		height: 60px;
+		margin:0 auto;
+		background: #111111 0% 0% no-repeat padding-box;
+	}
+	
+	
+	nav #logo{
+		float: left;
+		position: relative;
+		margin-top: 3.5%;
+		width: 25%;	
+	}
+
+	nav #logo img{
+		width: 100%;
+
+	}
+	
+	
+	/*네비게이션 메뉴*/
+	#gnb{
+		position: absolute;
+		left: 20%; top:30%;
+		width: 50%;
+		padding:0 2%;
+		margin-left: 15%;
+	}
+	
+	#gnb>li{
+		font-family: 'Noto Sans KR';
+		line-height: 29px;
+		float: left;
+		width: 20%;
+	}
+	
+	#gnb>li>a{
+		text-align: center;
+		color:#FFF;
+		font: normal normal 1.3vw/29px 'Noto Sans KR', sans-serif;
+	}
+	
+	
+	/* 스크롤 서브메뉴 100% */
+	#subLine{
+	position: absolute;
+	width: 100%;
+	background: #111111 0% 0% no-repeat padding-box;
+	}
+	
+	
+	
+	.subMenu{
+		z-index: 99;
+		position: absolute;
+		top:190%;
+		margin-left: -1%;
+		width: 20%;
+		text-align: center;
+		opacity: 1;
+		display: none;
+	}
+	
+	
+	.subMenu>li{
+		width: 100%;
+		margin-bottom: 3%;
+		font-family: 'Noto Sans CJK KR';
+		font-size: 1.3vw;
+		line-height: 29px;
+		letter-spacing: 0px;
+		color: #FFFFFF;
+	}
+	
+	
+	
+	#contWrap{
+		height:auto;
+	
+	}
+	
+	
+	/* ----------푸터---------- */
+	#footer{
+		width: 100%;
+		background: #111111 0% 0% no-repeat padding-box;
+		opacity: 1;
+		font-family: 'Noto Sans KR';
+		color: #FFFFFF;
+		padding-bottom: 1%;
+	
+	
+	}
+	
+	#footerBox{
+		margin: 0 auto;
+		width: 60%;
+		padding-top: 1%;
+	
+		
+	}
+	
+	
+	#loginBox{
+		margin-top: 2%;
+		margin-left: 25%;
+		width: 60%;
+		margin-bottom: 2%;
+	
+	}
+	
+	#loginBox>li{
+		width: 20%;
+		float: left;
+		margin: 0 2%;
+		text-align: center;
+		font: normal normal 0.7rem/19px 'Noto Sans KR', sans-serif;
+		letter-spacing: 0px;
+		color: #FFFFFF;
+	}
+	
+	
+	#loginBox>li:not(:last-child)::after{
+		float: right;
+		margin-top: -28%;
+		content: '｜';
+		margin-left: 20px;
+	}
+	
+	
+	#footerTextBox{
+		width:60%;
+		font: normal normal 1.2vw/24px 'Noto Sans KR', sans-serif;
+		opacity: 0.5;
+		text-align: center;
+		margin-bottom: 2%;
+		margin-left: 22%;
+	}
+	
+	
+	#contactBox{
+		width:100%;
+		margin-bottom: 0;
+	}
+	
+	#contactBox>li{
+		float: left;
+		margin-left: 4%;
+	}
+	
+	#contactBox>li>a{
+		font: normal normal 0.8rem/24px 'Noto Sans KR', sans-serif;
+	}
+	
+
+
+}
+
+/* 태블릿2 아이패드 프로*/
+
+
+
+@media screen and (min-width: 1251px){
+
+
+/* 모바일 메뉴 */
+
+
+#mobileMenu{
+	display: none;
+
+}
+
+#trigger{
+	display: none;
+}
+
+#trigger02{
+	display: none;
+}
+
+
+#m_logo{
+	display: none;
+}
+
+
+
+#topbox{
+	z-index: 99;
+	position: fixed;
+	width: 100%;	
+	height: 80px;
+	background: #111111 0% 0% no-repeat padding-box;
+}
+
+
+nav{
+	width: 60%;
+	height: 80px;
+	margin:0 auto;
+	background: #111111 0% 0% no-repeat padding-box;
+}
+
+
+nav #logo{
+	float: left;
+	position: relative;
+	width: 24%;	
+	margin-top: 2.3%;
+}
+
+
+#logo>img{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+/*네비게이션 메뉴*/
+#gnb{
+	position: absolute;
+	left: 20%; top:30%;
+	width: 50%;
+	padding:0 2%;
+	margin-left: 15%;
+}
+
+#gnb>li{
+	font-family: 'Noto Sans CJK KR';
+	font-size: 2vw;
+	line-height: 29px;
+		float: left;
+		width: 18%;
+}
+
+#gnb>li>a{
+	font-family: 'Noto Sans CJK KR';
+	text-align: center;
+	color:#FFF;
+	font: normal normal 1vw/29px 'Noto Sans KR', sans-serif;
+}
+
+
+/* 스크롤 서브메뉴 100% */
+#subLine{
+position: absolute;
+width: 100%;
+background: #111111 0% 0% no-repeat padding-box;
+}
+
+
+
+.subMenu{
+	z-index: 99;
+	position: absolute;
+	top:190%;
+	margin-left: -2%;
+	width: 20%;
+	text-align: center;
+	opacity: 1;
+	display: none;
+}
+
+
+.subMenu>li{
+	width: 100%;
+	font-size: 0.9vw;
+	margin-bottom: 3%;
+	font-family: 'Noto Sans CJK KR';
+	line-height: 29px;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+}
+
+
+
+#contWrap{
+	height:auto;
+
+}
+
+
+/* ----------푸터---------- */
+#footer{
+	width: 100%;
+	background: #111111 0% 0% no-repeat padding-box;
+	opacity: 1;
+	font-family: Noto Sans KR;
+	color: #FFFFFF;
+	padding-bottom: 1%;
+
+
+}
+
+#footerBox{
+	margin: 0 auto;
+	width: 80%;
+	padding-top: 1%;
+
+	
+}
+
+
+#loginBox{
+	margin-top: 2%;
+	margin-left: 38%;
+	width: 30%;
+	margin-bottom: 2%;
+
+}
+
+#loginBox>li{
+	width: 20%;
+	float: left;
+	margin: 0 2%;
+	text-align: center;
+	font: normal normal 0.7rem/19px 'Noto Sans KR', sans-serif;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+}
+
+
+#loginBox>li:not(:last-child)::after{
+	float: right;
+	margin-top: -28%;
+	content: '｜';
+	margin-left: 20px;
+}
+
+
+#footerTextBox{
+	width:50%;
+	font: normal normal 0.8rem/24px 'Noto Sans KR', sans-serif;
+	opacity: 0.5;
+	text-align: center;
+	margin-bottom: 2%;
+	margin-left: 27%;
+}
+
+
+#contactBox{
+	width:100%;
+	margin-bottom: 2%;
+	padding-bottom: 1%;
+}
+
+#contactBox>li{
+	float: left;
+	margin-left: 8.5%;
+}
+
+
+
+
+
+
+
+
+
+}
+/* PC */

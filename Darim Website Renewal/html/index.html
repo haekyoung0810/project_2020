@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<title>대림미술관</title>
+	<link rel="stylesheet" href="../css/main.css">
+	<script src="../js/jquery-3.5.1.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/index.js"></script>
+</head>
+<body id="wrapper">
+	<header id="topbox">
+			<div id="subLine"></div> <!-- 스크롤 서브메뉴 100% -->
+			<div id="m_logo"></div>
+			<div id="trigger"><img src="../img/mobile/menu.png" alt="모바일 메뉴 버튼"></div>
+				<div id="moSubline"> <!-- 모바일 서브메뉴 100% -->
+					<div id="trigger02"><img src="../img/mobile/close.png" alt="모바일 메뉴 닫힘 버튼"></div>							
+					<div id="mobileMenu"><!-- 모바일 메뉴 -->
+						<ul>
+							<li><a href="#">관람안내</a></li>
+							<li><a href="#">전시소개</a></li>
+							<li><a href="#">전시가이드</a></li>
+							<li><a href="#">D스토리</a></li>
+							<li><a href="#">D뉴스</a></li>
+						</ul>
+					</div>
+				</div>
+				<nav>
+					<div id="logo"><img src="../img/nav/logo.png" alt="로고이미지"></div>
+					<!--상단 메뉴-->
+					<ul id="gnb">
+						<li><a href="#" onclick='moveMenu(0)'>관람안내</a>
+								<ul class="subMenu">
+									<li><a href="#" onclick='moveMenu(1)'>전시요금</a></li>
+									<li><a href="#">전시 시간</a></li>
+									<li><a href="#" onclick='moveMenu(0)'>전시 예약</a></li>
+									<li><a href="#" onclick='moveMenu(2)'>유의사항</a></li>
+								</ul>
+						</li>
+						<li><a href="introduce.html">전시소개</a>
+								<ul class="subMenu">
+									<li><a href="introduce.html">현재전시</a></li>
+									<li><a href="introduce.html">지난전시</a></li>
+								</ul>
+						</li>
+						<li><a href="guide.html">전시가이드</a>
+								<ul class="subMenu">
+									<li><a href="guide.html">전시투어</a></li>
+									<li><a href="guide.html">모바일 가이드</a></li>
+								</ul>
+						</li>
+						<li><a href="history.html">D스토리</a>
+								<ul class="subMenu">
+									<li><a href="history.html">미술관 소개</a></li>
+									<li><a href="#">D 이벤트</a></li>
+									<li><a href="#">D Floor</a></li>
+								</ul>
+						</li>
+						<li><a href="#">D뉴스</a>
+								<ul class="subMenu">
+									<li><a href="#">공지사항</a></li>
+									<li><a href="#">1:1문의</a></li>
+									<li><a href="#">FAQ</a></li>
+									<li><a href="#">인재채용</a></li>
+								</ul>
+						</li>
+					</ul>
+				</nav>
+</header>
+	 	<article class="front"><!-------front---------->
+	 		<section class="sec01">
+	 			<h6 class="hidden">닉나이트 사진전</h6>
+			 	<div class="contBox01">
+					 <div class="sec01Bg01 blinking"></div>
+					<p class="mainCopy">
+						NICK<br>KNIGHT:<br>IMAGE
+					</p>				
+					<p class="subCopy">
+						닉나이트 사진전<br>
+						거침없이, 아름답게
+					</p>	
+	 			</div>
+	 		</section> 	
+	 	</article>
+ 	<article>
+ 		<section class="sec02">
+ 			<h6 class="hidden">닉나이트사진전</h6>
+ 			<div class="contBox2">
+				 <div class="leftBox">
+					<p class="sec2Copy">
+						INTRODUCTION<br>TO THE<br>EXHIBITION
+					</p>
+				</div>
+ 				<aside class="rightBox">
+ 					<p class="rightBoxCopy01">세상에서 가장 영향력 있는 <br>포토그래퍼 닉 나이트의 전시</p>
+ 					<p class="rightBoxCopy02">
+ 						거침없이, 아름답게 (NICK KNIGHT: IMAGE)를 국내 최초로 개최합니다
+ 					</p>
+ 					<p class="rightBoxCopy03">
+						&lt;닉 나이트 사진전-거침없이, 아름답게&gt; 전시는 다큐멘터리적 접근에서부터 패션계의 보편적 시선에 도전한 화보, 사진과 회화의 경계를 허무는 실험과 이미지에 움직임을 더한 패션필름에 이르기까지 삶의 가치와 아름다움에 대한 통념을 
+						 <br><br>그만의 차별화된 ‘이미지’로 거침없이 탈바꿈해 온 닉 나이트의 작품들을 총망라하여 선보입니다.
+					 </p>
+				</aside>		
+ 			</div>
+ 		</section>
+ 		<section class="sec03">
+			 <h6 class="hidden"></h6>
+			 <div class="contBox3">
+				<div class="bgcopy" id="menu00">
+					<span>EXHIBION</span><br>GUIDANCE
+				</div>
+				<div id="sec03_cont01" class="commonCont">
+					<p class="GuidanceCopy">사전예약</p>
+					<aside id="reserveBox">
+						<div class="commIcon sec03_icon01">
+							<a href="#####"><img src="../img/home/reserved.png" alt="관람예약 이미지" title="관람예약 이미지"></a>
+							<p>관람예약</p>
+							<p>Click</p>
+						</div>
+						<div class="commText icon01_descrip01">
+							<p>전시 티켓이 있으신가요?</p> 
+							<p>
+							혹은 아래 그룹에 해당하신다면,<br>
+							옆 버튼을 눌러 관람 예약을 진행해 주세요.<br> 
+							※ 1인 최대 1매 예약가능
+							</p>
+						</div>
+						<div class="commText02 icon01_descrip02">
+							<p>	DAELIM FRIEND’S TICKET 소지자 ∙ 전시 재관람 ICOM 
+								카드 소지자 ∙ 대림대학교 학생 ∙ 대림그룹 직원</p>
+						</div>
+					</aside>
+					<aside id="ticketBox">
+						<div class="commIcon sec03_icon02" id="menu01">
+							<a href="#####"><img src="../img/home/ticket.png" alt="관람예약 이미지" title="관람예약 이미지"></a>
+							<p>티켓구매</p>
+							<p>Click</p>
+						</div>
+						<div class="commText icon02_descrip01">
+							<p>전시 티켓을 구매하기 전 인가요?</p>
+							<p>전시 티켓을 구매하고 관람 예약을 하시려면
+								옆 버튼을 클릭 해주세요.<br>※ 1인 최대 2매
+							</p>
+						</div>
+						<div class="commText02 icon02_descrip02">
+							<p> 일반 티켓 (성인/초중고 학생/미취학 아동)
+								온라인 회원 할인 · 65세 이상 경로 할인 · 복지카드 소지자 할인
+							</p>
+						</div>
+					</aside>
+				</div>					
+				<div id="sec03_cont02" class="commonCont" id="menu01">
+					<p class="GuidanceCopy fareCopy">요금</p>
+					<aside id="fareBox">
+						<table class="fareTable">
+							<tr>
+								<th>관람연령</th>
+								<th>일반</th>
+								<th colspan="2">할인 20%</th>
+							</tr>
+							<tr>
+								<td>성인(만 19세 이상)</td>
+								<td>&#8361;8,000</td>
+								<td>&#8361;6,400</td>
+								<td rowspan="3" class="faresStyle01"><p> · 65세 이상<br>· 장애인(복지카드 소지)<br>· 문화가 있는 날</p></td>
+							</tr>
+							<tr>
+								<td>학생 초·중·고</td>
+								<td>&#8361;2,000</td>
+								<td>&#8361;1,600</td>
+							</tr>
+							<tr>
+								<td>미취학 아동(3-7세)</td>
+								<td>&#8361;1,000</td>
+								<td>&#8361;800</td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+				<div id="sec03_cont03" class="commonCont">
+					<p class ="GuidanceCopy"  id="menu02">유의사항</p>
+					<aside id="warningMesg">
+						<div class="pBox">
+							<p>* 관람객 여러분들의 건강과 안전을 위하여 전 직원과 마스크 착용을 의무화 하고 있으며 마스크 미착용자 및 37.5도 이상 <br>고열이 있으신 분들은 전시입장이 불가 하오니 방문에 참고 부탁드립니다.</p> 
+							<p>* 전시 입장 전, 방명록작성, 마스크 착용 점검, 열화상 카메라 촬영 점검 및 체온 측정, 전신 소독기 통과 등의 철저한 입장 절차를 진행합니다.</p> 
+							<p>(방명록 확인 단계에서 본인 확인 절차가 진행됩니다. 필요 시 신분증 확인을 요청 할 수 있으니 신분증 지참을 부탁드립니다.) </p>
+							<p>* 티켓박스, 전시장은 관람객 간 최대 2M 거리를 유지하며 운영됩니다. 이에 따라 전시장 입장 시 잠시간의 입장 대기가 발생 할 수 있습니다.</p> 
+							<p>* 최근 14일 이내 해외 혹은 확진자 발생 지역을 다녀오신 경험이 있으시거나 발열 및 호흡기 증상이 있으신 분은 입장이 불가합니다.</p>
+							<p>* 본 전시는 KT 멤버십 할인 혜택(KT VIP 초이스 포함)적용이 불가합니다.</p>
+						</div>
+					</aside>
+				</div>
+			 </div>
+		 </section>
+	 <article>
+ 		<section class="sec04">
+ 			<h6 class="hidden">도슨트 배너</h6>
+			 <p class="dawsontCopy">DAWSONT</p>
+			 <div class="dawsontBtn">
+				<p><a href="####"> 도슨트</a></p>
+				<p>|</p>
+				<p><a href="####">모바일 가이드</a> </p>
+			</div>
+			<div class="viewBox">
+			 <span class="viewMore1 viewcomm"><a href="###">VIEW MORE</a></span>
+			 <span class="viewMore2 viewcomm"><a href="###">VIEW MORE</a></span>
+			</div>
+		</section>
+ 		<section class="sec05">
+			 <div id="revieWrap">
+				<h2 class="sec05Copy copyCommon">D STORY</h6>
+				<div id="reviewBox01"  class="reviewComon">
+					<span>view point</span>
+					<img src="../img/home/contents.png" alt="닉나이트 전시회 리뷰1">
+					<p class="reviewDescip01">나는 단지 세상을 좀더 다른 각도에서 바라보는 것 뿐이다</p>
+					<p class="reviewDescip02">닉 나이트(Nick Knight, 1958년 영국 런던 출생)는 과감하고 
+						실험적인 촬영 기법으로 세계적인 주목을 받은 디자이너로
+					</p>
+					<aside id="btnBox">
+						<div class="reviewBtn btn001"><span>65</span></div>
+						<div class="reviewBtn btn002"><span>27</span></div>
+					</aside>	
+				</div>
+				<div id="reviewBox02" class="reviewComon">
+					<span>view point</span>
+					<img src="../img/home/contents.png" alt="닉나이트 전시회 리뷰1">
+					<p class="reviewDescip01">나는 단지 세상을 좀더 다른 각도에서 바라보는 것 뿐이다</p>
+					<p class="reviewDescip02">닉 나이트(Nick Knight, 1958년 영국 런던 출생)는 과감하고 
+						실험적인 촬영 기법으로 세계적인 주목을 받은 디자이너로
+					</p>
+					<aside id="btnBox">
+						<div class="reviewBtn btn001"><span>65</span></div>
+						<div class="reviewBtn btn002"><span>27</span></div>
+					</aside>	
+				</div>
+				<div id="reviewBox03" class="reviewComon">
+					<span>view point</span>
+					<img src="../img/home/contents.png" alt="닉나이트 전시회 리뷰1">
+					<p class="reviewDescip01">나는 단지 세상을 좀더 다른 각도에서 바라보는 것 뿐이다</p>
+					<p class="reviewDescip02">닉 나이트(Nick Knight, 1958년 영국 런던 출생)는 과감하고 
+						실험적인 촬영 기법으로 세계적인 주목을 받은 디자이너로
+					</p>
+					<aside id="btnBox">
+						<div class="reviewBtn btn001"><span>65</span></div>
+						<div class="reviewBtn btn002"><span>27</span></div>
+					</aside>	
+				</div>
+				<div id="reviewBox04" class="reviewComon">
+					<span>view point</span>
+					<img src="../img/home/contents.png" alt="닉나이트 전시회 리뷰1">
+					<p class="reviewDescip01">나는 단지 세상을 좀더 다른 각도에서 바라보는 것 뿐이다</p>
+					<p class="reviewDescip02">닉 나이트(Nick Knight, 1958년 영국 런던 출생)는 과감하고 
+						실험적인 촬영 기법으로 세계적인 주목을 받은 디자이너로
+					</p>
+					<aside id="btnBox">
+						<div class="reviewBtn btn001"><span>65</span></div>
+						<div class="reviewBtn btn002"><span>27</span></div>
+					</aside>	
+				</div>
+				<div id="reviewBox05" class="reviewComon">
+					<span>view point</span>
+					<img src="../img/home/contents.png" alt="닉나이트 전시회 리뷰1">
+					<p class="reviewDescip01">나는 단지 세상을 좀더 다른 각도에서 바라보는 것 뿐이다</p>
+					<p class="reviewDescip02">닉 나이트(Nick Knight, 1958년 영국 런던 출생)는 과감하고 
+						실험적인 촬영 기법으로 세계적인 주목을 받은 디자이너로
+					</p>
+					<aside id="btnBox">
+						<div class="reviewBtn btn001"><span>65</span></div>
+						<div class="reviewBtn btn002"><span>27</span></div>
+					</aside>	
+				</div>
+				<div id="reviewBox06" class="reviewComon">
+					<span>view point</span>
+					<img src="../img/home/contents.png" alt="닉나이트 전시회 리뷰1">
+					<p class="reviewDescip01">나는 단지 세상을 좀더 다른 각도에서 바라보는 것 뿐이다</p>
+					<p class="reviewDescip02">닉 나이트(Nick Knight, 1958년 영국 런던 출생)는 과감하고 
+						실험적인 촬영 기법으로 세계적인 주목을 받은 디자이너로
+					</p>
+					<aside id="btnBox">
+						<div class="reviewBtn btn001"><span>65</span></div>
+						<div class="reviewBtn btn002"><span>27</span></div>
+					</aside>	
+				</div>
+			</div>
+		</section>
+ 	</article>
+</article>
+<article id="sec06Box">
+	<section class="sec06" id="menu01">
+		<h3 class="sec06Copy copyCommon">NOTICE</h3>
+		<aside id="sec06ContBox">
+			<div id="noticeCafe" class="noticeCommon">
+				<a href="###"><div class="cafeImg"></div></a>
+				<a href="###"><p>[ 대림미술관 ] 미술관옆집 CAFÉ<br> 7월 운영 안내</p></a>
+				<span>안녕하세요. 미술관옆집입니다.</span>
+				<span>초록이 짙어져 가는 7월 여름, 미술관옆집 운영소식을 알립니다.</span>
+			</div>
+			<aside id="noticeDnews" class="noticeCommon">
+				<div class="DnewsBox">
+					<aside class="DnewsTextBox">
+						<p>D NEWS</p>
+						<span class="noticeViewMore view01">
+							<a href="#">VIEW MORE</a>
+						</span>
+					</aside>
+				</div>
+			</aside>
+			<aside id="noticeFaq" class="noticeCommon">
+				<div class="faqcontBox">
+					<aside class="faq01 faqcont">
+						<p>FAQ</p>
+						<span class="noticeViewMore view02">
+							<a href="#">VIEW MORE</a>
+						</span>
+					</aside>
+					<aside class="faq02 faqcont">
+						<img src="../img/home/qIcon.png" alt="faq아이콘">
+						<p>공휴일에 전시 볼 수 있나요?</p>
+					</aside>
+					<aside class="faq03 faqcont">
+						<img src="../img/home/qIcon.png" alt="faq아이콘">
+						<p>디멤버스카드는 어떤 혜택이 있나요?</p>
+					</aside>
+				</div>
+			</aside>
+			<aside id="noticeRecruit" class="noticeCommon">
+				<div class="recruitBox">
+					<p>인재채용</p>
+					<span class="noticeViewMore view03">
+						<a href="#">VIEW MORE</a>
+					</span>
+				</div>
+				<p>작성된 채용공고가 없습니다</p>
+			</aside>
+		</aside>
+	</section>
+</article>
+
+
+<footer id="footer">
+	<div id="footerBox">
+		<ul id="loginBox">
+			<li><a href="##">Login　</a></li>
+			<li><a href="##">Join Us　</a></li>
+			<li><a href="##">SiteMap　</a></li>
+			<li><a href="##">English　</a></li>
+		</ul>
+		<p id="footerTextBox">
+			서울특별시 종로구 자하문로4길 21 지번주소 : 통의동 35-1 T. 02-720-0667 F. 02-720-0665 
+			(재)대림문화재단 사업자등록번호: 305-82-09028서울특별시 종로구 자하문로4길 21(통의동 35-1) 
+			COPYRIGHT 2015 BY DAELIM MUSEUM ALL RIGHT RESERVED.
+		</p>
+		<ul id="contactBox">
+			<li><a href="###">개인정보 처리방침</a></li>
+			<li><a href="###">이용약관</a></li>
+			<li><a href="###">영상정보처리기기 운영 관리방침</a></li>
+			<li><a href="##">ConTact Us</a></li>
+			<li><a href="###">문화체육관광부</a></li>
+		</ul>
+	</div>
+</footer>
+</body>
+</html>
